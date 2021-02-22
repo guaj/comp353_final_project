@@ -22,7 +22,9 @@ git checkout -b "name of the branch"
 
 ** When you are done working on some part, you need to commit your code to the repo. Use the following command to do so.
 ```
+git add .
 git commit -m "Enter a description of what you have done is this commit"
+git push
 ```
 
 * It is important to commit so people can continue working where you are at, to avoid working on things that were allready complete. *
