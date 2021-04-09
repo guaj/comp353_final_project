@@ -1,0 +1,17 @@
+.page-container {
+  padding: 100px 5%;
+}
+
+.container {
+  padding: 100px 20%
+}
+
+.mat-card-subtitle {
+  padding-top: 50px;
+}
+
+.submit-form-button {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+}
