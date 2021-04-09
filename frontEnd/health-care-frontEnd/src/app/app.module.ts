@@ -20,6 +20,7 @@ import { PositiveTestFormsComponent } from './main/positive-test-forms/positive-
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
+import { ListOfPeopleComponent } from './admin/list-of-people/list-of-people.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {MatListModule} from "@angular/material/list";
     AdminComponent,
     TestHistoryComponent,
     AlertsComponent,
-    PositiveTestFormsComponent
+    PositiveTestFormsComponent,
+    ListOfPeopleComponent
   ],
   imports: [
     BrowserModule,
