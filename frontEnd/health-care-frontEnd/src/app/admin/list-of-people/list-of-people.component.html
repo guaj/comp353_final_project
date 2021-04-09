@@ -1,1 +1,64 @@
-<p>list-of-people works!</p>
+<div class="page-container">
+    <div class="page-header">
+  
+      <div class="page-header">
+        <h1>List of People</h1>
+      </div>
+  
+  
+      <div class="data-table">
+  
+        <div class="mat-row">
+          <mat-form-field>
+            <mat-label>Filter</mat-label>
+            <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+          </mat-form-field>
+        </div>
+      </div>
+  
+      <div class="data-table">
+        <div class="mat-row">
+          <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z9">
+  
+            <ng-container  matColumnDef="First Name">
+              <th mat-sort-header mat-header-cell *matHeaderCellDef>First Name</th>
+              <td mat-cell *matCellDef="let element">
+                {{element.date}}
+              </td>
+            </ng-container>
+            <ng-container  matColumnDef="Last Name">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef>Last Name</th>
+                <td mat-cell *matCellDef="let element">
+                  {{element.date}}
+                </td>
+              </ng-container>
+
+            <ng-container matColumnDef="date of birth">
+              <th mat-sort-header mat-header-cell *matHeaderCellDef>Date Of Birth</th>
+              <td mat-cell *matCellDef="let element">
+                {{element.result}}
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Medicare Number">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef>Medicare Number</th>
+                <td mat-cell *matCellDef="let element">
+                  {{element.result}}
+                </td>
+              </ng-container>
+  
+            <ng-container matColumnDef="facility">
+              <th mat-sort-header mat-header-cell *matHeaderCellDef>Facility</th>
+              <td mat-cell *matCellDef="let element">
+                {{element.facility}}
+              </td>
+            </ng-container>
+  
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
