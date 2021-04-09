@@ -9,19 +9,20 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {FormsModule} from "@angular/forms";
-import {MatCardModule} from "@angular/material/card";
-import {MatInputModule} from "@angular/material/input";
-import { AdminComponent } from './admin/admin.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
 import { TestHistoryComponent } from './main/test-history/test-history.component';
 import { AlertsComponent } from './main/alerts/alerts.component';
 import { PositiveTestFormsComponent } from './main/positive-test-forms/positive-test-forms.component';
-import {MatTabsModule} from "@angular/material/tabs";
-import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatListModule} from "@angular/material/list";
-import {MatTableModule} from "@angular/material/table";
-import {MatSortModule} from "@angular/material/sort";
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+import { ListOfPeopleComponent } from './admin/list-of-people/list-of-people.component';
+import {AdminComponent} from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {MatSortModule} from "@angular/material/sort";
     AdminComponent,
     TestHistoryComponent,
     AlertsComponent,
-    PositiveTestFormsComponent
+    PositiveTestFormsComponent,
+    ListOfPeopleComponent
   ],
   imports: [
     BrowserModule,
