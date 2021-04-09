@@ -1,0 +1,35 @@
+.sidenav-fix {
+  transform: translate3d(0px, 0px, 0px);
+  visibility: visible;
+}
+
+mat-tab-group.vertical-tabs {
+  flex-direction: row !important;
+}
+  .mat-tab-labels {
+  flex-direction: column !important;
+  }
+
+.mat-tab-label {
+  border: none;
+  height: auto !important;
+  padding: 10px !important;
+  min-width: 0px !important;
+  justify-content: left !important;
+  opacity: 1;
+  border-bottom: 1px solid #eee;
+}
+
+.mat-tab-body-wrapper {
+  flex: 1;
+}
+
+.mat-tab-header {
+  border-bottom: none !important;
+  border-right: 1px solid #eee;
+}
+
+mat-ink-bar {
+  display: none;
+}
+
