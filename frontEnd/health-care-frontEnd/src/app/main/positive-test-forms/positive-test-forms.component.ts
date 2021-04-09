@@ -7,6 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PositiveTestFormsComponent implements OnInit {
 
+  mainSymptoms: string[] = [
+    'Fever (temperature exceeding 38.1 degrees Celsius or 100.6 degrees Fahrenheit)',
+    'Cough',
+    'Shortness of breath or difficulty breathing',
+    'Loss of taste and smell',
+  ];
+
+  otherSymptoms: string[] = [
+    'Nausea',
+    'Stomach aches',
+    'Vomiting',
+    'Headache',
+    'Muscle pain',
+    'Diarrhea',
+    'Sore throat'
+  ];
+
   constructor() { }
 
   ngOnInit() {

@@ -33,3 +33,9 @@ mat-ink-bar {
   display: none;
 }
 
+
+.login-button {
+  display: flex;
+  float: right;
+  padding-left: 150px;
+}

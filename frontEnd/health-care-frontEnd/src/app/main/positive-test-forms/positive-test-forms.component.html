@@ -1,1 +1,46 @@
-<p>positive-test-forms works!</p>
+<div class="page-container">
+
+  <div class="page-header">
+    <h1>Follow up form</h1>
+  </div>
+
+  <div class="page-subheader">
+    <h3>
+      For the people who are diagnosed positive
+      for COVID-19, a symptom history is required for the two weeks following
+      the test result.
+    </h3>
+  </div>
+
+  <div class="container">
+    <mat-card>
+      <mat-card-content>
+        <mat-card-title>Please check the symptoms you are affected by</mat-card-title>
+        <mat-card-subtitle>Main Symptoms</mat-card-subtitle>
+        <mat-selection-list #symptoms>
+          <mat-list-option *ngFor="let mainSymptom of mainSymptoms">
+            {{mainSymptom}}
+          </mat-list-option>
+        </mat-selection-list>
+
+        <mat-card-subtitle>Other Symptoms</mat-card-subtitle>
+        <mat-selection-list #symptoms>
+          <mat-list-option *ngFor="let otherSymptom of otherSymptoms">
+            {{otherSymptom}}
+          </mat-list-option>
+        </mat-selection-list>
+
+        <div class="submit-form-button">
+          <button mat-raised-button >Submit</button>
+        </div>
+
+      </mat-card-content>
+
+    </mat-card>
+
+
+  </div>
+
+</div>
+
+

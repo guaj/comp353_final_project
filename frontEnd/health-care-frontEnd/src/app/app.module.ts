@@ -19,6 +19,7 @@ import { AlertsComponent } from './main/alerts/alerts.component';
 import { PositiveTestFormsComponent } from './main/positive-test-forms/positive-test-forms.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatCardModule,
     MatInputModule,
     MatTabsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
