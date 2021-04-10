@@ -3,8 +3,10 @@ import {MatTableDataSource} from '@angular/material/table';
 import {MatSort} from '@angular/material/sort';
 
 export interface List{
-  name: string;
+  firstName: string;
+  lastName: string;
   date_of_birth:string;
+  medicareNumber: string;
 }
 
 @Component({
@@ -16,9 +18,8 @@ export class ListOfPeopleComponent implements AfterViewInit  {
 
   constructor() { }
 
-
   listOfPeople: List[] = [
-    {name: '2020-04-06', date_of_birth: 'CHUM'},
+    {firstName: 'Bob', lastName: 'Hope',date_of_birth:'sauce',medicareNumber:'1234'},
 
   ];
 
@@ -33,6 +34,11 @@ export class ListOfPeopleComponent implements AfterViewInit  {
     this.dataSource.sort = this.sort;
   }
  
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+}
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
